@@ -1,0 +1,107 @@
+:root {
+    --main-color: rgba(41, 128, 185, 1.0);
+    --main-color-light: rgba(41, 128, 185, 0.2);
+    --accent-color: rgba(243, 156, 18, 1.0);
+    --accent-color-light: rgba(243, 156, 18, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom right, var(--main-color), var(--main-color-light));
+    background-repeat: no-repeat;
+    min-height: 200vh;
+}
+.main-title{
+    font-size: 2rem;
+    color: white;
+    
+}
+.header, .görev-form{
+    min-height: 20vh;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item{
+    padding: .5rem;
+    font: 1.5rem;
+    border:none;
+    background-color: white;
+    outline: none;
+}
+.btn-görev-ekle{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.btn-görev-ekle:hover{
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.görev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.görev-listesi{
+    list-style: none;
+    min-width: 40%;
+    
+    
+}
+
+.görev-item{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.2rem;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.görev-tanım{
+    flex: 1;
+    padding: 1rem;
+}
+
+.görev-btn{
+    background-color: var(--accent-color);
+    outline: none;
+    border:none; font-size: 1.2rem;
+    padding: 1.2rem;
+    
+    
+}
+.görev-btn-sil{
+    background-color: rgb(206, 80, 80)
+}
+
+.görev-tamamlandı{
+    text-decoration: line-through;
+    opacity: 0.5;
+    
+}
+
+.far{
+    pointer-events: none;
+}
+.kaybol{
+    transform: scale(0)
+}
+
+
+
